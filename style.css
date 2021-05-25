@@ -330,3 +330,22 @@ footer {
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 2rem 0.5rem;
+  }
+  .input {
+    justify-content: space-between;
+    margin-right: 0px;
+  }
+  .input p {
+    margin-right: 0px;
+  }
+  .social-icons a {
+    margin-right: 5px;
+  }
+  .social-icons::after {
+    display: none;
+  }
+}

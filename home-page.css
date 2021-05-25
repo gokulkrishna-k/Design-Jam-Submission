@@ -75,6 +75,9 @@
   .intro {
     flex-direction: column;
   }
+  .intro-text h1 {
+    line-height: 65px;
+  }
   .intro-text,
   .intro img {
     width: 100%;
