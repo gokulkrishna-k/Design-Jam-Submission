@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>About</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/fav-icon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./about-page.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <nav>
+          <a href="./index.html"><h1 class="logo">Donuts</h1></a>
+          <ul class="nav-links">
+            <li><a href="./index.html" class="link">Home</a></li>
+            <li><a href="./menu.html" class="link">Menu</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+            <li><a href="#" class="link active-nav-link">About</a></li>
+            <li>
+              <a href="#"
+                ><img class="cart" src="./assets/cart-icon.svg" alt=" cart"
+              /></a>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+      <section id="about">
+        <h1 data-aos="fade-up">About Us</h1>
+        <h3 data-aos="fade-up">
+          Who are we? <img src="./assets/about-icon.svg" alt="about-icon" />
+        </h3>
+        <div class="about">
+          <div class="about-text" data-aos="fade-right">
+            <h2>Donuts</h2>
+            <p>
+              More than a donut shop. The Donuts is a family-owned shop that
+              focuses on chef-made, small-batch, craft donuts that rotate based
+              on seasonality. We're a 100% scratch bakery, so we use nothing but
+              the highest quality ingredients and making everything in house!
+              Naturally, we don’t use any artificial ingredients in anything we
+              make, because, well - that’s gross! If we wouldn’t serve it to our
+              own family, we definitely wouldn’t serve it to yours! All of our
+              yeast-raised donuts are based on our 24hr Brioche recipe which is
+              buttery, insanely flavorful and fluffy. Our cake donuts are a
+              little crunchy on the outside, soft & moist on the inside and from
+              time to time we'll even fold fresh fruit and other things into
+              them! Coffee? Yep, we've got you covered. We’ve worked incredibly
+              hard and poured every ounce of heart and passion we have into
+              pushing the boundaries of what a 'donut' is, to make sure we’re
+              not only Chennai’s best donut shop, but one of the best donut
+              shops in the state.
+            </p>
+          </div>
+          <img
+            src="./assets/store.png"
+            alt="store-image"
+            data-aos="fade-left"
+          />
+        </div>
+        <img class="about-wave" src="./assets/wave-1.svg" alt="" />
+      </section>
+      <footer id="footer">
+        <div class="footer">
+          <div id="contact" class="contact-form">
+            <h1>Contact Us</h1>
+            <div class="input">
+              <p>Name</p>
+              <input type="text" />
+            </div>
+            <div class="input">
+              <p class="p2">Email</p>
+              <input type="text" />
+            </div>
+            <button>Send</button>
+          </div>
+          <div class="footer-link">
+            <div class="footer-links">
+              <h1>More Info</h1>
+              <div class="footer-links-inner">
+                <a href="#"><p>Policy</p></a>
+                <a href="#"><p>Legal Information</p></a>
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>Products</p></a>
+                <a href="#"><p>Food Safety</p></a>
+                <a href="#"><p>Terms and Conditions</p></a>
+              </div>
+            </div>
+            <div class="social">
+              <div class="social-icons">
+                <a href="#"
+                  ><img src="./assets/facebook.svg" alt="facebook"
+                /></a>
+                <a href="#"><img src="./assets/youtube.svg" alt="youtube" /></a>
+                <a href="#"><img src="./assets/twitter.svg" alt="twitter" /></a>
+                <a href="#"
+                  ><img src="./assets/pintrest.svg" alt="pintrest"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/instagram.svg" alt="instagram"
+                /></a>
+              </div>
+              <p>Follow Us on Socials.</p>
+            </div>
+          </div>
+        </div>
+        <p class="rights">&#169; All rights reserved 2021.</p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+      });
+    </script>
+  </body>
+</html>

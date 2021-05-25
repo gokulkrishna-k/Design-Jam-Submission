@@ -1,0 +1,137 @@
+#menu {
+  margin: auto;
+  max-width: 1920px;
+  position: relative;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 5rem;
+  position: relative;
+}
+.menu-blob1 {
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  z-index: -10;
+}
+.menu-blob2 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  z-index: -10;
+}
+
+#menu h1 {
+  font-size: 36px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ff4571;
+  margin: auto;
+}
+
+.filter {
+  width: 300px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+.filter button {
+  width: 142px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  background-color: #f2408d;
+  border: 2px solid #f2408d;
+  border-radius: 5px;
+}
+
+.filter button:last-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #f2408d;
+}
+.filter button img {
+  margin-left: 10px;
+}
+.wave1 {
+  position: absolute;
+  z-index: -20;
+  bottom: -1px;
+}
+
+.menu-list {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.menu-item {
+  background-color: white;
+  max-width: 265px;
+  height: 405px;
+  box-shadow: 4px 4px 5px rgba(62, 62, 62, 0.4);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.menu-item img {
+  width: 265px;
+  margin-bottom: -20px;
+}
+
+.menu-item h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #02073e;
+  margin-left: 20px;
+}
+.menu-item p {
+  color: #ff4571;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.menu-item button {
+  width: 150px;
+  height: 40px;
+  background-image: linear-gradient(to right, #f2408d, #ff4571);
+  outline: none;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+.menu-item button img {
+  all: unset;
+  width: 15px;
+  margin-left: 5px;
+  pointer-events: none;
+}
+
+.menu-item button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .menu-list {
+    justify-content: center;
+  }
+}

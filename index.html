@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/fav-icon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./home-page.css" />
+
+    <title>Donuts</title>
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <nav>
+          <a href="#"><h1 class="logo">Donuts</h1></a>
+          <ul class="nav-links">
+            <li><a href="#" class="link active-nav-link">Home</a></li>
+            <li><a href="./menu.html" class="link">Menu</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+            <li><a href="./about.html" class="link">About</a></li>
+            <li>
+              <a href="#"
+                ><img class="cart" src="./assets/cart-icon.svg" alt=" cart"
+              /></a>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+      <section id="intro">
+        <div class="intro">
+          <div class="intro-text" data-aos="zoom-in-right">
+            <h1>
+              Feeling <span>Hungry?</span> Donut worry have a
+              <span>Donut.</span>
+            </h1>
+            <button class="order-button">Order Now</button>
+            <p>*Free Delivery</p>
+          </div>
+          <img
+            src="./assets/intro-donut.png"
+            alt="donuts-stack"
+            data-aos="zoom-in-left"
+          />
+        </div>
+        <img
+          class="blob-intro"
+          src="./assets/blob-intro.svg"
+          alt="blob=intro"
+          data-aos="fade-up-right"
+        />
+      </section>
+      <section id="menu">
+        <h1 data-aos="fade-up">Menu</h1>
+        <h3 data-aos="fade-up">Take a look at our menu!</h3>
+        <a href="./menu.html" data-aos="fade-up"
+          ><button class="goto-menu">View Full Menu ></button></a
+        >
+        <div class="swiper-container mySwiper menu-list" data-aos="fade-left">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide menu-item">
+              <img
+                src="./assets/menu/Chocolate-Glazed-Doughnut.png"
+                alt="donut"
+              />
+              <h2>Chocolate Glazed Donut</h2>
+              <p>$3.99</p>
+              <button>Add to Cart<img src="./assets/add-icon.svg" /></button>
+            </div>
+            <div class="swiper-slide menu-item">
+              <img src="./assets/menu/Chocolate-Iced-Cake.png" alt="donut" />
+              <h2>Chocolate Iced Cake Donut</h2>
+              <p>$3.99</p>
+              <button>Add to Cart<img src="./assets/add-icon.svg" /></button>
+            </div>
+            <div class="swiper-slide menu-item">
+              <img
+                src="./assets/menu/Chocolate-Iced-Glazed-Cruller.png"
+                alt="donut"
+              />
+              <h2>Chocolate Iced Glazed Cruller Donut</h2>
+              <p>$3.99</p>
+              <button>Add to Cart<img src="./assets/add-icon.svg" /></button>
+            </div>
+            <div class="swiper-slide menu-item">
+              <img
+                src="./assets/menu/Chocolate-Iced-Glazed-with-Sprinkles.png"
+                alt="donut"
+              />
+              <h2>Chocolate Iced with Sprinkles Donut</h2>
+              <p>$3.99</p>
+              <button>Add to Cart<img src="./assets/add-icon.svg" /></button>
+            </div>
+            <div class="swiper-slide menu-item">
+              <img src="./assets/menu/Chocolate-Iced-Glazed.png" alt="donut" />
+              <h2>Chocolate Iced Glazed Donut</h2>
+              <p>$3.99</p>
+              <button>Add to Cart<img src="./assets/add-icon.svg" /></button>
+            </div>
+            <div class="swiper-slide menu-item-more">
+              <a href="./menu.html" data-aos="fade-up"
+                ><button class="goto-menu">View Full Menu ></button></a
+              >
+            </div>
+          </div>
+        </div>
+        <h3 style="color: #251f44">Place your order now!</h3>
+        <img class="wave1" src="./assets/wave-1.svg" alt="wave1" />
+      </section>
+
+      <section id="location">
+        <h1 data-aos="fade-up">
+          Stores Near You <img src="./assets/gps-icon.svg" alt="location" />
+        </h1>
+        <h3 data-aos="fade-up">Visit your nearest store today</h3>
+        <div class="location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31090.676293392942!2d80.20447233832265!3d13.077972076035557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdonuts%20near%20me!5e0!3m2!1sen!2sin!4v1621767728933!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            data-aos="fade-right"
+          ></iframe>
+          <img src="./assets/store.png" alt="store" data-aos="fade-left" />
+        </div>
+        <img
+          class="white-wave"
+          src="./assets/white-wave.svg"
+          alt="white-wave"
+        />
+      </section>
+      <section id="reviews">
+        <h1 data-aos="fade-up">Reviews</h1>
+        <h3 data-aos="fade-up">
+          What our Customers Say
+          <img
+            class="comment-icon"
+            src="./assets/commet-heading.svg"
+            alt="comment-icon"
+          />
+        </h3>
+        <div class="reviews">
+          <div class="review-card card1" data-aos="fade-right">
+            <img src="./assets/profile1.png" alt="profile" />
+            <div class="review-text">
+              <h2>Gokul Krishna</h2>
+              <p>
+                Amazing Donuts i have ever had , so soft and tasty it melts in
+                your mouth. If you ever have a chance to try these donuts never
+                miss it.
+              </p>
+            </div>
+          </div>
+
+          <div class="review-card card2" data-aos="fade-left">
+            <img src="./assets/profile2.jpg" alt="profile" />
+            <div class="review-text">
+              <h2>Gordon Ramsay</h2>
+              <p>
+                Best Donuts in the area. Makes my mouth watery everytime i go to
+                the shop.
+              </p>
+            </div>
+          </div>
+
+          <div class="review-card card3" data-aos="fade-right">
+            <img src="./assets/profile3.jpg" alt="profile" />
+            <div class="review-text">
+              <h2>MrBeast</h2>
+              <p>
+                Today in this video we are gonna buy 10000 Donuts and give it
+                way. Also subscribe to PewDiePie and MrBeast.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="review-blob1"
+          src="./assets/review-blob1.svg"
+          alt="review-blob1"
+          data-aos="fade-up-right"
+        />
+        <img
+          class="review-blob2"
+          src="./assets/review-blob2.svg"
+          alt="review-blob2"
+          data-aos="fade-down-left"
+        />
+      </section>
+      <section id="feedback">
+        <h1 data-aos="fade-up">Feedback</h1>
+        <h3 data-aos="fade-up">
+          What are your thoughts
+          <img
+            class="feedback-heading"
+            src="./assets/feedback-heading.svg"
+            alt="feedback"
+          />
+        </h3>
+
+        <div class="feedback-form" data-aos="zoom-in">
+          <textarea></textarea>
+
+          <img src="./assets/feedback-send.svg" alt="send" />
+        </div>
+
+        <img
+          class="feedback-bg"
+          src="./assets/feedback-bg.svg"
+          alt="feedback-bg"
+        />
+      </section>
+      <section id="delivery">
+        <h1 data-aos="zoom-out">
+          Free Delivery <img src="./assets/bike.svg" alt="bike" />
+        </h1>
+      </section>
+      <footer id="footer">
+        <div class="footer">
+          <div id="contact" class="contact-form" data-aos="fade-in">
+            <h1>Contact Us</h1>
+            <div class="input">
+              <p>Name</p>
+              <input type="text" />
+            </div>
+            <div class="input">
+              <p class="p2">Email</p>
+              <input type="text" />
+            </div>
+            <button>Send</button>
+          </div>
+          <div class="footer-link" data-aos="fade-in">
+            <div class="footer-links">
+              <h1>More Info</h1>
+              <div class="footer-links-inner">
+                <a href="#"><p>Policy</p></a>
+                <a href="#"><p>Legal Information</p></a>
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>Products</p></a>
+                <a href="#"><p>Food Safety</p></a>
+                <a href="#"><p>Terms and Conditions</p></a>
+              </div>
+            </div>
+            <div class="social">
+              <div class="social-icons">
+                <a href="#"
+                  ><img src="./assets/facebook.svg" alt="facebook"
+                /></a>
+                <a href="#"><img src="./assets/youtube.svg" alt="youtube" /></a>
+                <a href="#"><img src="./assets/twitter.svg" alt="twitter" /></a>
+                <a href="#"
+                  ><img src="./assets/pintrest.svg" alt="pintrest"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/instagram.svg" alt="instagram"
+                /></a>
+              </div>
+              <p>Follow Us on Socials.</p>
+            </div>
+          </div>
+        </div>
+        <p class="rights">&#169; All rights reserved 2021.</p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+      });
+
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 25,
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>
