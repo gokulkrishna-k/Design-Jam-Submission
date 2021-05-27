@@ -10,6 +10,7 @@
   padding-top: 5rem;
   position: relative;
 }
+
 .menu-blob1 {
   position: absolute;
   bottom: 20%;
@@ -51,6 +52,7 @@
   background-color: #f2408d;
   border: 2px solid #f2408d;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .filter button:last-of-type {
@@ -63,10 +65,31 @@
 .filter button img {
   margin-left: 10px;
 }
+
+.v-cart {
+  color: white;
+  background-color: #ff5a81;
+  border: 0px;
+  border-radius: 7px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  width: 150px;
+  height: 45px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  margin-top: 20px;
+}
+.v-cart:hover {
+  background-color: white;
+  color: #ff5a81;
+  border: 2px solid #ff5a81;
+}
 .wave1 {
   position: absolute;
   z-index: -20;
   bottom: -1px;
+  width: 100%;
 }
 
 .menu-list {
@@ -118,6 +141,7 @@
   align-items: center;
   display: flex;
   color: white;
+  cursor: pointer;
 }
 
 .menu-item button img {

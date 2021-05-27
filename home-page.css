@@ -131,6 +131,7 @@
 }
 .wave1 {
   position: absolute;
+  width: 100%;
 
   z-index: -20;
   bottom: -1px;
@@ -189,6 +190,7 @@
   align-items: center;
   display: flex;
   color: white;
+  cursor: pointer;
 }
 
 .menu-item button img {

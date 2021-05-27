@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Donuts-Cart</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/fav-icon.svg" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./cart.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header>
+        <nav>
+          <a href="./index.html"><h1 class="logo">Donuts</h1></a>
+          <ul class="nav-links">
+            <li><a href="./index.html" class="link">Home</a></li>
+            <li><a href="./menu.html" class="link">Menu</a></li>
+            <li><a href="#contact" class="link">Contact</a></li>
+            <li><a href="./about.html" class="link">About</a></li>
+            <li>
+              <a href="#" title="Shopping Cart"
+                ><svg
+                  class="cart-highlight"
+                  width="35"
+                  height="36"
+                  viewBox="0 0 35 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.5 0.175476C7.83501 0.175476 0 8.1846 0 18.0644C0 27.9441 7.83501 35.9533 17.5 35.9533C27.165 35.9533 35 27.9441 35 18.0644C35 8.1846 27.165 0.175476 17.5 0.175476ZM8.6795 7.73326L11.7941 8.7334C12.2065 8.87183 12.4811 9.26324 12.529 9.66365L12.7042 11.4171L26.8076 13.0265C27.4131 13.1464 27.8387 13.7053 27.7539 14.2799L26.878 19.3243C26.7666 19.8519 26.3391 20.2136 25.8633 20.2196H13.3344L13.0887 21.6499H24.9875C25.6097 21.6723 26.0654 22.1566 26.0727 22.7221C26.0469 23.3672 25.5382 23.7895 24.9875 23.7965H11.8283C11.1646 23.7404 10.6773 23.2027 10.7794 22.5452L11.3391 19.3963L10.4633 10.5939L8.0493 9.80781C7.7693 9.7124 7.55912 9.53295 7.41913 9.27058C7.15423 8.70314 7.40165 8.07488 7.87415 7.80312C8.14383 7.65983 8.4072 7.64197 8.6795 7.73326ZM13.4219 24.4146C14.328 24.4146 15.0626 25.1654 15.0626 26.0916C15.0626 27.0178 14.328 27.7687 13.4219 27.7687C12.5159 27.7687 11.7813 27.0178 11.7813 26.0916C11.7813 25.1654 12.5159 24.4146 13.4219 24.4146ZM23.0521 24.4146C23.9581 24.4146 24.6927 25.1654 24.6927 26.0916C24.6927 27.0178 23.9581 27.7687 23.0521 27.7687C22.146 27.7687 21.4114 27.0178 21.4114 26.0916C21.4114 25.1654 22.146 24.4146 23.0521 24.4146Z"
+                    fill="#FF4571"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
+      </header>
+      <section id="sp-cart">
+        <div class="sp-cart" data-aos="fade-in">
+          <div class="cart-head">
+            <h1>Your <span>Shopping Cart</span></h1>
+            <p>3 items</p>
+          </div>
+          <div class="cart-body">
+            <div class="cart-item" data-aos="fade-right">
+              <div class="item">
+                <img
+                  src="./assets/menu/Chocolate-Iced-Glazed-with-Sprinkles.png"
+                  alt="donuts"
+                />
+                <h3>Chocolate Iced Glazed with Sprinkles</h3>
+              </div>
+              <div class="right">
+                <div class="count">
+                  <p>1</p>
+                  <h4>x $3.99</h4>
+                </div>
+                <div class="total">
+                  <p>Total: $3.99</p>
+                  <img src="./assets/delete-icon.svg" alt="Delete" />
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item" data-aos="fade-right">
+              <div class="item">
+                <img
+                  src="./assets/menu/Strawberry-Iced-with-Sprinkles.png"
+                  alt="donuts"
+                />
+                <h3>Strawberry Iced with Sprinkles</h3>
+              </div>
+              <div class="right">
+                <div class="count">
+                  <p>1</p>
+                  <h4>x $3.99</h4>
+                </div>
+                <div class="total">
+                  <p>Total: $3.99</p>
+                  <img src="./assets/delete-icon.svg" alt="Delete" />
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item" data-aos="fade-right">
+              <div class="item">
+                <img
+                  src="./assets/menu/Chocolate-Iced-Glazed.png"
+                  alt="donuts"
+                />
+                <h3>Chocolate Iced Glazed</h3>
+              </div>
+              <div class="right">
+                <div class="count">
+                  <p>1</p>
+                  <h4>x $3.99</h4>
+                </div>
+                <div class="total">
+                  <p>Total: $3.99</p>
+                  <img src="./assets/delete-icon.svg" alt="Delete" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bill" data-aos="fade-left">
+          <div class="bill-head">
+            <h1>Total</h1>
+            <h1>$11.97</h1>
+          </div>
+          <div class="gift">
+            <p>Gift coupon</p>
+            <div class="gift-input">
+              <input type="text" />
+              <button>Apply</button>
+            </div>
+          </div>
+          <div class="bill-detail">
+            <div class="bill-detail-wrapper">
+              <p>Shipping</p>
+              <p>:$0.00</p>
+            </div>
+            <div class="bill-detail-wrapper">
+              <p>Gift Coupon</p>
+              <p>:$0.00</p>
+            </div>
+            <div class="bill-detail-wrapper">
+              <p>Taxes</p>
+              <p>:$0.00</p>
+            </div>
+          </div>
+          <div class="bill-head">
+            <h1 class="g-total">Grand Total</h1>
+            <h1>$11.97</h1>
+          </div>
+          <button class="checkout">Proceed to Checkout</button>
+        </div>
+        <img
+          class="cart-blob1"
+          src="./assets/review-blob1.svg"
+          alt="review-blob1"
+          data-aos="fade-up-right"
+        />
+        <img
+          class="cart-blob2"
+          src="./assets/review-blob2.svg"
+          alt="review-blob2"
+          data-aos="fade-down-left"
+        />
+        <img class="wave1" src="./assets/wave-1.svg" alt="" />
+      </section>
+      <footer id="footer">
+        <div class="footer">
+          <div id="contact" class="contact-form">
+            <h1>Contact Us</h1>
+            <div class="input">
+              <p>Name</p>
+              <input type="text" />
+            </div>
+            <div class="input">
+              <p class="p2">Email</p>
+              <input type="text" />
+            </div>
+            <button>Send</button>
+          </div>
+          <div class="footer-link">
+            <div class="footer-links">
+              <h1>More Info</h1>
+              <div class="footer-links-inner">
+                <a href="#"><p>Policy</p></a>
+                <a href="#"><p>Legal Information</p></a>
+                <a href="#"><p>Locations</p></a>
+                <a href="#"><p>Products</p></a>
+                <a href="#"><p>Food Safety</p></a>
+                <a href="#"><p>Terms and Conditions</p></a>
+              </div>
+            </div>
+            <div class="social">
+              <div class="social-icons">
+                <a href="#"
+                  ><img src="./assets/facebook.svg" alt="facebook"
+                /></a>
+                <a href="#"><img src="./assets/youtube.svg" alt="youtube" /></a>
+                <a href="#"><img src="./assets/twitter.svg" alt="twitter" /></a>
+                <a href="#"
+                  ><img src="./assets/pintrest.svg" alt="pintrest"
+                /></a>
+                <a href="#"
+                  ><img src="./assets/instagram.svg" alt="instagram"
+                /></a>
+              </div>
+              <p>Follow Us on Socials.</p>
+            </div>
+          </div>
+        </div>
+        <p class="rights">&#169; All rights reserved 2021.</p>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      const burger = document.querySelector('.burger');
+      const nav = document.querySelector('.nav-links');
+
+      burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+      });
+    </script>
+  </body>
+</html>

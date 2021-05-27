@@ -91,7 +91,8 @@ nav a {
   transition: all 0.1s ease-in;
 }
 .active-nav-link {
-  border-bottom: 3px solid #ff5a81;
+  border-bottom: 3px solid #3a63c9;
+  color: #3a63c9;
 }
 nav a:hover {
   opacity: 0.8;
@@ -246,6 +247,8 @@ footer {
 .footer-link {
   width: 50%;
   display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 .footer-link h1 {
